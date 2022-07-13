@@ -1,0 +1,196 @@
+
+<header class="navbar navbar-expand-md navbar-light bg-light px-3">
+    <a href="#" class="navbar-brand">
+        <img src="../../../assets/img/logo.png" style="height:80.0px; width: 150px;" alt="">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+        <nav id="mainNav"  >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"
+                   id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Types of events
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Physical Event</a></li>
+                    <li><a class="dropdown-item" href="#">Virtual Event</a></li>
+                    <li><a class="dropdown-item" href="#">Hybrid event</a></li>
+                  </ul>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/about">About-us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " routerLink="/contact" >Contact-us</a>
+                </li>
+              </ul>
+              
+        </nav>
+        <form action="" id="" class="ms-auto">
+            <div class="input-group">
+                <button     type="button"  value="Create Event"  class="btn btn-danger ms-2 " > Create Event
+                </button>
+            </div>
+        </form>
+         <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Create Account
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="staticBackdropLabel">Sign up</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Email</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a valid Email.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">State</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Company </option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-danger" type="submit">Save</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <button area-placeholder="My account"   type="button" class="btn btn-secondary  ms-3" data-bs-toggle="offcanvas" data-bs-target="#userTools">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+    </button>
+</header>
+<section class="offcanvas offcanvas-end" id="userTools">
+    <div class="offcanvas-header">
+        <h2 style="color: red;" class="offcanvas-title">Sign in</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">User name</label>
+                <input type="text" class="form-control" name="username" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password">
+            </div>
+            <button class="btn btn-danger">Connexion</button>
+        </form>
+    </div>
+</section>
+<router-outlet></router-outlet> 
+<div class="col-lg-12" >
+<footer class="text-center text-white" class="bg-secondary">
+    <!-- Grid container -->
+    <div class="container p-2">
+      <!-- Section: Iframe -->
+      <section class="">
+        <div class="row d-flex justify-content-center">
+            
+              <div  class="col-lg-4 text-white">
+                     <img  src="../../../assets/img/logo.png" class="rounded-circle" style=" width:100px; height: 80px; background-color: aliceblue; " alt="">    
+                    
+                    <p>
+                      Here you can use rows and columns to organize your footer content. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                                        <h4 style="text-decoration: underline;"> Social media</h4>
+             <a href="">        <img src="../../../assets/img/fb.png" alt=""></a> 
+             <a href="">         <img style="height: 44px; width: 40px;"  src="../../../assets/img/linked.png" alt=""></a>
+                  
+              </div>
+              <div  class="col-lg-4 text-white">
+              <h3 style="text-decoration: underline;"  >Sponsorship Marketing  </h3> <p>
+                <ul><li>                Coca-Cola and the Olympic Games.
+</li>
+                <li>                PepsiCo and NFL.
+</li>
+                <li>                Just Eat and The X Factor.
+</li>
+                <li>                Rolex and TED.
+</li>
+                <li>                Emirates and Arsenal.
+</li>
+                <li>                Nike and Cristiano Ronaldo.
+</li></ul>
+              </div>
+          <div class="col-lg-4">
+            <div class="ratio ratio-16x9">
+              <video
+              class="shadow-1-strong rounded"
+              src="https://www.youtube.com/embed/vlDzYIIOYmM"
+              title="YouTube video"
+              allowfullscreen
+              controls  poster="../../../assets/img/logo.png" 
+            >
+
+            </video>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      
+    </div>
+  </footer>
+</div>
+  

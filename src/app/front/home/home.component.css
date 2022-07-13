@@ -1,0 +1,21 @@
+#slid hr:hover{
+    width: 180px;
+}
+#slid hr{height: 10px;
+     margin-left: 30px;
+      width: 25px;}
+
+ #slid1 hr:hover{
+        width: 180px;
+    }
+#slid1 hr{height: 10px;
+         margin-left: 30px;
+          width: 50px;}
+
+  #slid2 hr:hover{
+            width: 180px;
+        }
+  #slid2 hr{height: 10px;
+             margin-left: 0px;
+              width: 90px;}
+        
